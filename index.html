@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style_1.4.css">
+    <link rel="stylesheet" href="css/style_2.2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
@@ -25,14 +25,18 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><input type="text" class="text" onfocus="this.value=''" value="Username" required></td>
-                </tr>
-                <tr>
-                    <td><input type="password" class="text" onfocus="this.value=''" value="Password" required></td>
+                    <td><input type="text" name="Username" id="lower_text" class="text" placeholder="Username" required></td>
                 </tr>
                 <tr>
                     <td>
-                       <a href="forgot_password.html" id="pas-2"> <p id="pas">Forgot Password</p></a>
+                        <div class="inputGroup">
+                        <input type="password" class="text paddingRight30" name="password" id="password" placeholder="Password" required>
+                         <i class="fas fa-eye toogle_text" id="toggle" onclick="showHidePass();"></i>
+                        </div></td>
+                </tr>
+                <tr>
+                    <td>
+                       <a href="forgot_password.html" id="pas-2"><p id="pas">Forgot Password</p></a>
                     </td>
                 </tr>
                 <tr>
@@ -50,5 +54,16 @@
                     </div>
             </div>
         </div>    
+        <script>
+            var lower_text = document.getElementById('lower_text');
+            tester.innerHTML = tester.innerHTML.toLowerCase();
+
+            
+            function showHidePass() {
+            var element = document.getElementById('password');
+            element.type = (element.type == 'password' ? 'text' : 'password');
+            }
+
+        </script>
 </body>
 </html>

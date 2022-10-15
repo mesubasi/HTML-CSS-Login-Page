@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style_1.4.css">
+  <link rel="stylesheet" href="css/style_2.2.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
@@ -21,7 +21,7 @@
             <div class="back">
               <tr>
                 <td>
-                  <a href="index.html"><i class="fa fa-undo"></i></a>
+                  <a href="index.html"><i class="fa fa-arrow-left"></i></a>
                 </td>
               </tr>
             </div>
@@ -31,33 +31,43 @@
                   </td>
               </tr>
               <tr>
-                  <td>
-                      
-                  </td>
-              </tr>
-              <tr>
-                  <td><input type="text" class="text_2" onfocus="this.value=''" value="Full Name" required></td>
+                  <td><input type="text" class="text_2" placeholder="Full Name" required></td>
               </tr>
               <tr>
                 <td>
-                  <input type="email" name="" value="Email" onfocus="this.value=''" class="text_2" required>
+                  <input type="email" name="" placeholder="Email" class="text_2" required>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <input type="text" name="" value="Username" onfocus="this.value=''" class="text_2" required>
+                  <input type="text" name="" id="lower_text2" placeholder="Username" class="text_2" required>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <input type="password" name="" value="Password" onfocus="this.value=''" class="text_2" required>
-                </td>
+                  <div class="inputGroup2">
+                  <input type="password" name="password" id="password" placeholder="Password" class="text_2" required>
+                  <input type="password" name="password" id="password2" placeholder="Re-Enter Password" class="text_2" required>
+                  <i class="fas fa-eye f1" id="toggle" onclick="showHidePass();"></i>
+                  </div></td>
               </tr>
               <tr>
-                  <td><a href="register.html"><input type="button"  value="Register" id="register2" class="register-button"></a></td>
+                  <td><a href="register.html"><input type="button"  value="Register" class="register-button2"></a></td>
               </tr>
           </table>
           </div>
-      </div>    
+      </div>   
+      <script>
+            var lower_text2 = document.getElementById('lower_text2');
+            tester.innerHTML = tester.innerHTML.toLowerCase()
+
+            function showHidePass() {
+            var element = document.getElementById('password');
+            element.type = (element.type == 'password' ? 'text' : 'password');
+            var element = document.getElementById('password2');
+            element.type = (element.type == 'password' ? 'text' : 'password');
+            };
+
+      </script> 
 </body>
 </html>
