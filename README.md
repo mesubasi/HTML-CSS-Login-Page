@@ -1,5 +1,5 @@
 # HTML & CSS Login - Register - Forgot Password Page
-![1](https://user-images.githubusercontent.com/88106043/195996098-40a00392-3e86-4bc2-88e0-7e8c5f33c6db.PNG)
+![1](https://user-images.githubusercontent.com/88106043/196003318-a54e6307-03c9-4ead-aaef-33340b9a13ee.PNG)
 <h3> Tasks </h3>
 • Responsive. <br>
 • Password page allows sending by mail <br>
